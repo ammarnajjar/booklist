@@ -1,0 +1,18 @@
+<h2>New Book</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <input matInput type="text" placeholder="Title*" formControlName="title" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input
+      matInput
+      type="text"
+      placeholder="Author*"
+      formControlName="author"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input matInput type="number" placeholder="Year*" formControlName="year" />
+  </mat-form-field>
+  <button mat-raised-button [disabled]="!form.valid" type="submit">add</button>
+</form>
