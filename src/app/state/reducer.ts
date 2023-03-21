@@ -20,9 +20,9 @@ export const initialState: BookState = {
       year: 1878,
     },
     {
-      title: 'Über Menschen',
-      author: 'Juli Zeh',
-      year: 2022,
+      title: 'Die Frauen vom Löwenhof - Agnetas Erbe',
+      author: 'Corina Bomann',
+      year: 2018,
     },
     {
       title: 'Über Menschen',

@@ -7,6 +7,7 @@ import {
   MatDialogModule,
   MatDialogRef
 } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -24,6 +25,7 @@ import { AppState, selectBooks } from '../state/selectors';
     MatTableModule,
     MatButtonModule,
     MatDialogModule,
+    MatIconModule
   ],
   templateUrl: './booklist.component.html',
   styleUrls: ['./booklist.component.scss'],
