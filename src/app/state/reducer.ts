@@ -4,7 +4,6 @@ import { BookState } from './selectors';
 
 export const initialState: BookState = {
   books: [
-
     {
       title: 'Harry Potter und der Stein der Weisen',
       author: 'Joanne K. Rowling',
@@ -45,10 +44,7 @@ export const initialState: BookState = {
 
 export const booksReducer = createReducer(
   initialState,
-  on(addBook, (state, { book }) => {
-    console.log('🚀 ~ book:', book);
-    return { books: [...state.books, book] };
-  }),
+  on(addBook, (state, { book }) => ({ books: [...state.books, book] })),
   on(removeBook, (state, { book }) => ({
     books: [...state.books.filter((_book) => _book.title !== book.title)],
   }))
